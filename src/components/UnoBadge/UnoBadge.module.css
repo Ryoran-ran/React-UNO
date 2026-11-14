@@ -1,0 +1,8 @@
+.badge{position:absolute;bottom:calc(100% - 6px);left:50%;z-index:15;transform:translateX(-50%) rotate(-6deg);display:flex;align-items:center;gap:12px;padding:8px 22px;background:#f3d883;border:2px solid #fff0bf;border-radius:11px;box-shadow:0 5px 20px #102a2738;color:#354c31;pointer-events:none;white-space:nowrap;animation:unoPop 220ms ease-out}
+.badge strong{font:italic 42px/.95 Georgia,serif}.badge span{font-size:11px;font-weight:600}.compact{left:auto;right:7px;top:-8px;bottom:auto;transform:rotate(-7deg);padding:4px 8px;border-radius:7px;z-index:6}.compact strong{font-size:25px}
+@keyframes unoPop{from{opacity:0;scale:.7}to{opacity:1;scale:1}}
+@media(max-width:600px){.badge{padding:7px 16px;gap:9px}.badge strong{font-size:32px}.badge span{font-size:9px}.compact{padding:3px 7px}.compact strong{font-size:22px}}
+@media(max-height:450px){.badge{padding:5px 13px}.badge strong{font-size:26px}.compact strong{font-size:20px}}
+@media(prefers-reduced-motion:reduce){.badge{animation:none}}
+
+@media(max-height:450px){.badge:not(.compact){left:14px;transform:rotate(-6deg)}}

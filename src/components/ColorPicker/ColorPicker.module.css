@@ -1,0 +1,4 @@
+.preview{display:flex;align-items:center;justify-content:center;gap:11px;margin:22px 0 17px;color:#6c7b5b;font-size:11px}
+.preview>div{transform:rotate(-7deg)}
+.cancel{display:block;margin:21px auto -4px;padding:12px 8px;color:#748366;font-size:11px}
+.cancel:hover{color:#345239}

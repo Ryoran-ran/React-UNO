@@ -1,0 +1,10 @@
+.slot{position:relative;width:var(--card-width,92px);height:var(--card-height,138px);isolation:isolate}
+.stackedCard{position:absolute;inset:0;transform:translate(var(--offset-x),var(--offset-y)) rotate(var(--angle));transform-origin:center}
+.stackedCard>div{width:100%;height:100%;box-shadow:0 1px 1px #fff5,0 3px 0 #17291c44,0 5px 11px #0003}
+.inFlight{visibility:hidden}
+.contact{position:absolute;inset:-11px;border-radius:45%;pointer-events:none;border:1px solid #e5e7b700;z-index:0}
+.landed{animation:cardContact 280ms ease-out both}
+@keyframes cardContact{from{transform:scale(.87);border-color:#e5e7b755;box-shadow:0 0 20px #e5e7b711}to{transform:scale(1.13);border-color:#e5e7b700;box-shadow:0 0 0 transparent}}
+@media(max-width:600px){.slot{width:var(--card-width,61px);height:var(--card-height,93px)}}
+@media(prefers-reduced-motion:reduce){.contact{animation:none}}
+.slot[data-wild-color]:after{content:'';position:absolute;inset:-8px;border:2px solid var(--wild-color);border-radius:16px;box-shadow:0 0 16px color-mix(in srgb,var(--wild-color) 40%,transparent);z-index:-1;pointer-events:none}

@@ -1,0 +1,14 @@
+.indicator{flex:none;min-width:min(220px,100%);max-width:100%;padding:9px 16px;border:1px solid #faf5d3cc;border-radius:11px;background:#e7ebdf;color:#253e31;box-shadow:0 5px 19px #061b1733,0 1px 0 #fff8 inset;text-align:center;pointer-events:none}
+.yours{background:#f0d58e;border-color:#ffe9a8;box-shadow:0 0 0 3px #e7cb7722,0 5px 22px #061b1744,0 1px 0 #fff8 inset}
+.content{min-width:0;animation:turnEnter 240ms ease-out}
+.headline{display:flex;align-items:center;justify-content:center;gap:5px;font-size:clamp(18px,2.8dvh,25px);line-height:1.25;white-space:nowrap}.headline strong{display:block;min-width:0;max-width:12em;overflow:hidden;text-overflow:ellipsis;font-weight:700;letter-spacing:.03em}.headline>span:last-child{flex:none;font-size:.76em}.marker{font-size:11px;color:#64794b;flex:none;margin-right:3px}.yours .marker{color:#816420}
+.detail{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:10px;line-height:1.4;margin-top:3px;color:#607153}
+@keyframes turnEnter{from{opacity:.45;transform:translateY(-3px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:600px){.indicator{padding:7px 9px;border-radius:8px;min-width:min(175px,100%)}.headline{font-size:19px;gap:3px}.marker{display:none}.detail{font-size:8px;margin-top:2px}}
+@media(max-height:650px){.indicator{padding:6px 10px}.headline{font-size:18px}.detail{font-size:9px;margin-top:2px}}
+@media(max-height:575px){.indicator{display:flex;justify-content:center;min-width:0;padding:4px 9px;border-radius:6px}.content{display:flex;align-items:center;justify-content:center;gap:8px}.headline{font-size:17px;gap:3px}.headline strong{max-width:8em}.marker{font-size:8px;margin-right:0}.detail{font-size:8px;max-width:130px;margin:0}}
+@media(max-width:600px) and (max-height:650px){.indicator{padding:5px 7px}.headline{font-size:16px}.detail{font-size:8px}}
+@media(max-width:600px) and (max-height:575px){.indicator{padding:4px 8px}.detail{display:none}.headline{font-size:17px}.headline strong{max-width:7em}}
+@media(prefers-reduced-motion:reduce){.content{animation:none}}
+
+@media(max-height:360px){.indicator{padding:2px 7px}.headline{font-size:12px}.detail{font-size:7px}.content{gap:5px}}
