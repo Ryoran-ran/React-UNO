@@ -2,6 +2,14 @@
 
 React + TypeScript製の、2〜8人で遊べるオリジナルのカラーカードゲームです。添付の「UNO風カードゲーム 開発仕様書 v1.0」に基づき、Phase 1〜5を実装しています。既存製品の画像・ロゴ・外部フォントは使用していません。
 
+## GitHub Pagesで遊ぶ
+
+[ブラウザーでゲームを開く](https://ryoran-ran.github.io/React-UNO/)
+
+`main` ブランチへのpushで、GitHub Actionsが依存パッケージの復元、テスト、本番ビルド、GitHub Pagesへの公開を順に実行します。公開先は `https://ryoran-ran.github.io/React-UNO/` です。進行状況はリポジトリの [Actions](https://github.com/Ryoran-ran/React-UNO/actions/workflows/deploy-pages.yml) で確認できます。
+
+Pagesの公開元には「GitHub Actions」を使用します。Viteの相対パス設定により、ゲームとアイコン、マニフェスト、Service Workerをリポジトリ名の配下から読み込みます。
+
 ## 起動
 
 この作業環境では **[起動.cmd](./起動.cmd) をダブルクリック**し、表示された `http://127.0.0.1:5173/` をブラウザーで開いてください。5173番が使用中の場合は画面に表示されたURLを使います。現在の環境には通常のNode.jsコマンドがなかったため、検証用の公式Node.js LTSを `.tools/node.exe` に配置しています。システムの設定は変更していません。
